@@ -1,8 +1,5 @@
 <?php 
 
-
-
-
 function getDatabaseConnection(): PDO
 {
     $dsn = 'mysql:dbname=pokemon;host=localhost;charset=utf8';
