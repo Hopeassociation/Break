@@ -1,4 +1,4 @@
-<?php include "app/view/common/header.php" ?>
+
      
     <section class="main">
     <a href="#"><h1>Grenada</h1></a>
