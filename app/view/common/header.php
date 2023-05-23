@@ -8,14 +8,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../../../public/css/index.css">
+    <link rel="stylesheet" href="public/css/styles.css">
     <title>titre</title>
 </head>
 
 <body>
 
     <header class="header">
-        <?php include "app/view/common/header.php" ?>
+        <?php include "app/view/common/navigation.php" ?>
     </header>
      
 

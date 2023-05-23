@@ -1,6 +1,6 @@
 <nav id="menu">
-    <a href="../../../break">
-    <img src="../../../public/images/logo_break.png" alt="lego_break">
+    <a href="index.php">
+    <img src="public/images/logo_break.png" alt="lego_break">
     </a>
     <ul>
         <li><a href="#">Nos bières</a></li>
