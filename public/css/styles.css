@@ -4,8 +4,13 @@
     box-sizing: border-box;
 }
 
+::selection {
+    color: #0D0D0D;
+    background-color: white;
+}
+
 body {
-    background-color: black;
+    background-color: #0D0D0D;
     color: white;
 }
 
@@ -73,8 +78,7 @@ button:hover {
 
 .main {
     height: 100vh;
-    margin-top: 100px;
-    
+    margin-top: 40px;
 }
 
 
@@ -98,17 +102,22 @@ h1:hover {
     display: flex;
     position: relative;
     top: 140px;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 /*Intégration page Accueil*/
 .swatch {
-    display: block;
+    display: flex;
     text-align: center;
     position: relative;
+    height: 500px;
     margin: 10px;
-    margin-right: 665px;
+    justify-content: center;
     top: -70px
+}
+
+.swatch img {
+    width: 550px;
 }
 
 .swatch div {
@@ -255,4 +264,14 @@ h1:hover {
     10% {
         transform: rotate(0deg);
     }
+}
+
+#grid {
+    display: flex;
+    justify-content: center;
+}
+
+#grid img {
+    width: 60%;
+    opacity: 0.6;
 }
