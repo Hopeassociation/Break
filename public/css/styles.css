@@ -311,3 +311,19 @@ h1:hover {
         transform: translateY(-30px);
     }
 }
+
+#descr {
+    display: flex;
+    justify-content: center;
+    height: 8%;
+    align-items: center;
+}
+
+#descr p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 26px;
+    text-align: center;
+}

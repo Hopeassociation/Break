@@ -16,6 +16,11 @@
   <div id="grid">
     <img src="public/images/grid_biere.svg" alt="grid">
   </div>
+  <div id="descr">
+    <p>
+    Grenada est une bière au concept écologique et de collection capsule. 
+    </p>
+  </div>
 
 </section>
 
