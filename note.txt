@@ -1,0 +1,8 @@
+Pour la page d'Accueil
+
+données à générer => images de bieres
+
+creer un tableau qui contient les images
+
+mettre ce tableau dans une fontion
+

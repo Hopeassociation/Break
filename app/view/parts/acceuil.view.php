@@ -1,4 +1,3 @@
-<?php include "app/view/common/header.php" ?>
 <section class="main">
 
   <div id="titre">
@@ -23,7 +22,3 @@
   </div>
 
 </section>
-
-</body>
-
-</html>
