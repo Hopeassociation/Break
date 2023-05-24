@@ -6,3 +6,4 @@ creer un tableau qui contient les images
 
 mettre ce tableau dans une fontion
 
+Mettre page axel 

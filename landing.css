@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    }
+
+
+
+.scan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #000000;
+    animation: animateColor 2s linear infinite;
+    width: 350px;
+    height: 430px;
+    border-radius: 2em;
+    justify-content: center;
+    padding-top: 10px;
+    animation: logoAp 5s;
+
+}
+
+@keyframe logoAp {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+.scan .face {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: url(tete.png);
+    background-size: 300px;
+    background-repeat:no-repeat ;
+}
+
+.scan .face::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(tete2.png);
+    background-size: 300px;
+    animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+}
+
+.scan .face::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #479944;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #479944) drop-shadow(0 0 60px #479944);
+    animation: animate_line 4s ease-in-out infinite;
+}
+
+@keyframes animate_line {
+
+    0%,
+    100% {
+        top: 0%;
+    }
+
+    50% {
+        top:
+            100%;
+    }
+}
+
+.scan h3 {
+    color: #479944;
+    font-family: 'roboto' ;
+    font-size: 2em;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 20px #479944) drop-shadow(0 0 60px #479944);
+    animation: animate text 0.5s steps(1) infinite;
+}
+
+@keyframes animate_text {
+
+    0,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.bouton{
+    display: flex;
+    justify-content: space-between;
+    width: 180px;
+    flex-direction: row;
+    margin: 10px;
+}
+
+#oui{
+    background:#479944;
+     color: #000000;
+     font-family: 'roboto' ;
+     text-decoration:none;
+     font-size:1.2em;
+     padding: 0.25em 1em;
+     border-radius: 0.3em;
+   }
+   
+   #oui:hover{
+    color: #479944;
+    border:solid #479944;
+    background-color: #000000;
+    transition: 0.2s;
+    box-shadow:0px 0px 10px #5ac256;
+   }
+#non{
+    background:#479944;
+     color: #000000;
+     font-family: 'roboto' ;
+     text-decoration:none;
+     font-size:1.2em;
+     padding: 0.25em 1em;
+     border-radius: 0.3em;
+   }
+   
+   #non:hover{
+     color: #479944;
+     border:solid #479944;
+     background-color: #000000;
+     transition: 0.2s;
+     box-shadow:0px 0px 10px #5ac256;
+   }
