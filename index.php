@@ -1,19 +1,21 @@
-<?php include "app/view/common/header.php"?>
-  <section class="main">
-    <a href="#">
-      <h1>Grenada</h1>
-    </a>
+<?php include "app/view/common/header.php" ?>
+<section class="main">
 
-    <div class="swatch">
-      <div id="b1"><a href="https://www.mauiultrafins.fr/aileron/aileron-freeride/"><img src="public\images\coco.png" alt="biere_coco"></div></a>
-      <div><img src="public\images\passion.png" alt="biere_passion"></div>
-      <div><img src="public\images\litchi.png" alt="biere_passion"></div>
-      <div><img src="public\images\ananas.png" alt="biere_passion"></div>
-      <div><img src="public\images\hibiscus.png" alt="biere_passion"></div>
-      <div><img src="public\images\grenade.png" alt="biere_passion"></div>
-    </div>
+  <div id="titre">
+    <h1>Grenada</h1>
+  </div>
 
-  </section>
+
+  <div class="swatch">
+    <div id="b1"><a href="https://www.mauiultrafins.fr/aileron/aileron-freeride/"><img src="C4 copie.png"></div></a>
+    <div><img src="P6 copie.png"></div>
+    <div><img src="L1 copie.png"></div>
+    <div><img src="A5 copie.png"></div>
+    <div><img src="h2 copie.png"></div>
+    <div><img src="G1 copie.png"></div>
+  </div>
+
+</section>
 
 </body>
 
