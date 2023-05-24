@@ -11,113 +11,6 @@ body {
 
 /* ----------HEADER---------- */
 
-.swatch {
-    display: block;
-    text-align: center;
-    position: relative;
-    margin: 100px;
-}
-
-div {
-    width: 70px;
-    height: 225px;
-    position: absolute;
-    top: 0px;
-    border-radius: 5px;
-    border-top: solid 2px rgba(0, 0, 0, .2);
-    border-left: solid 3px rgba(255, 255, 255, .2);
-    border-bottom: solid 3px rgba(0, 0, 0, .2);
-    text-align: center;
-    box-sizing: border-box;
-    transform-origin: center 90%;
-    display: inline-block;
-    backface-visibility: hidden;
-    margin-left: -35px;
-    transform: rotate(0deg);
-}
-
-div:before {
-    width: 16px;
-    height: 16px;
-    content: "";
-    background-color: #FFFFFF;
-    display: inline-block;
-    border-radius: 8px;
-    bottom: 10px;
-    position: absolute;
-    margin-left: -8px;
-}
-
-div:nth-child(1) {
-    background-color: #815A8F;
-    animation: swatch-purple-motion 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-}
-
-div:nth-child(2) {
-    background-color: #6730EC;
-    animation: swatch-blue-motion 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-}
-
-div:nth-child(3) {
-    background-color: #9ED763;
-    animation: swatch-green-motion 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-}
-
-div:nth-child(4) {
-    background-color: #FBD400;
-    animation: swatch-yellow-motion 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-}
-
-div:nth-child(5) {
-    background-color: #FF9000;
-    animation: swatch-orange-motion 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-}
-
-div:nth-child(6) {
-    background-color: #F73F52;
-    animation: swatch-red-motion 5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
-}
-
-.transform (fromDeg ) {
-    0% {
-        transform: rotate(fromDeg);
-    }
-
-    30%,
-    70% {
-        transform: rotate(@toDeg);
-    }
-
-    90%,
-    10% {
-        transform: rotate(@fromDeg );
-    }
-}
-
-@keyframes swatch-purple-motion {
-    transform(0deg, -65deg);
-}
-
-@keyframes swatch-blue-motion {
-    .transform(0deg, -40deg);
-}
-
-@keyframes swatch-green-motion {
-    .transform(0deg, -15deg);
-}
-
-@keyframes swatch-yellow-motion {
-    .transform(0deg, 15deg);
-}
-
-@keyframes swatch-orange-motion {
-    .transform(0deg, 40deg);
-}
-
-@keyframes swatch-red-motion {
-    .transform(0deg, 65deg);
-}
-
 
 #menu {
     display: flex;
@@ -175,4 +68,186 @@ button:hover::after {
 
 button:hover {
     box-shadow: inset 0px 0px 25px #479944;
+}
+
+
+.main {
+    height: 100vh;
+}
+
+
+section h1 {
+    color: #FFFFFF;
+    font-family: 'TS Block Bold', sans-serif;
+    font-size: 60px;
+    position: relative;
+    z-index: 1;
+}
+
+
+h1:hover {
+    -webkit-text-stroke: 2px white;
+    color: black;
+}
+
+
+#titre {
+    justify-content: center;
+    display: flex;
+}
+
+/*Intégration page Accueil*/
+.swatch {
+    display: block;
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    margin-right: 665px;
+    top: -70px
+}
+
+.swatch div {
+    height: 225px;
+    position: absolute;
+    top: -30px;
+    text-align: center;
+    box-sizing: border-box;
+    transform-origin: center 90%;
+    display: inline-block;
+    backface-visibility: hidden;
+    margin-left: -10px;
+    transform: rotate(0deg);
+}
+
+.swatch div:before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    display: inline-block;
+    border-radius: 8px;
+    bottom: 10px;
+    position: absolute;
+    margin-left: -8px;
+}
+
+.swatch div:nth-child(1) {
+    animation: swatch-purple-motion 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(2) {
+    animation: swatch-blue-motion 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(3) {
+    animation: swatch-green-motion 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(4) {
+    animation: swatch-yellow-motion 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(5) {
+    animation: swatch-orange-motion 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(6) {
+    animation: swatch-red-motion 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+@keyframes swatch-purple-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(-65deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-blue-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(-40deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-green-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(-15deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-yellow-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(15deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-orange-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(40deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-red-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(65deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
 }
