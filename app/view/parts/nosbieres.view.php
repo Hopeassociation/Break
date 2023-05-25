@@ -5,8 +5,8 @@
     </div>
     <section id="biere">
         <div class="biere">
-            <img src="public/images/bieredex/grenada.png" alt="biere_grenada">
             <h3>Grenada</h3>
+                    
         </div>
         <div class="biere">
             <img src="encadre.svg" alt="">
