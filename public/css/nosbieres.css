@@ -106,6 +106,14 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    font-family: 'TS Block';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 65px;
+    line-height: 76px;
+}
+
 #biere {
     display: flex;
     flex-direction: column;
@@ -114,6 +122,12 @@ h2 {
 
 .biere {
     height: 80vh;
+    display: flex;
+    justify-content: center;
+}
+
+.biere:nth-child(1) {
+    background-color: red;
 }
 
 .photobiere {

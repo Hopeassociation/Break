@@ -4,7 +4,10 @@
         <h2>vous devriez aimez ceci !</h2>
     </div>
     <section id="biere">
-        <div class="biere"></div>
+        <div class="biere">
+            <img src="public/images/mockup/grenada.png" alt="biere_grenada">
+            <h3>Grenada</h3>
+        </div>
         <div class="biere"></div>
         <div class="biere"></div>
         <div class="biere"></div>
