@@ -121,7 +121,7 @@ body {
 
 @keyframes animate_text {
 
-    0,
+    0%,
     100% {
         opacity: 0;
     }
