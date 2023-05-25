@@ -1,9 +1,5 @@
-Pour la page d'Accueil
+établir connection base de données
 
-données à générer => images de bieres
+récupérer nom biere
 
-creer un tableau qui contient les images
-
-mettre ce tableau dans une fontion
-
-Mettre page axel 
+et le mettre
