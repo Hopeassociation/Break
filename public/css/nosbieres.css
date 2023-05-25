@@ -118,16 +118,23 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 13%;
 }
 
 .biere {
-    height: 80vh;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+}
+
+.biere img {
+    height: 1089px;
+    height: 549.65px;
 }
 
 .biere:nth-child(1) {
-    background-color: red;
+    background-color: rgb(83, 0, 0);
 }
 
 .photobiere {
