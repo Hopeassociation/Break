@@ -2,7 +2,7 @@
 
 require_once 'database.php';
 require_once 'app/model/dataConnection.php';
-require_once 'app/model/nosbieres.model.php';
+// require_once 'app/model/nosbieres.model.php';
 
 //Connection bd
 
@@ -10,7 +10,7 @@ $databaseConnection = getDatabaseConnection();
 
 //nombre biere =
 
-$nb_biere = getNombreBiere($databaseConnection);
+// $nb_biere = getNombreBiere($databaseConnection);
 
 //Génération de la page
 $page_title = 'Nos bières';

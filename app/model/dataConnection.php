@@ -2,7 +2,7 @@
 
 function getDatabaseConnection(): PDO
 {
-    $dsn = 'mysql:dbname=pokemon;host=localhost;charset=utf8';
+    $dsn = 'mysql:dbname=break;host=localhost;charset=utf8';
     $username = 'root';
     $password = '';
 
