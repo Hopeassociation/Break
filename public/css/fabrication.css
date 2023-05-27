@@ -1,0 +1,371 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    overscroll-behavior-y: none;
+
+    background-color: #000e03;
+}
+
+/* ----------HEADER---------- */
+
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    margin: 0 3%;
+}
+
+.header img {
+    width: 195px;
+    height: 56px;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: 'Roboto';
+}
+
+#menu a:hover {
+    color: #479944;
+    transition: 0.3s;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#menu ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+#menu button {
+    width: 10em;
+    height: 3.5em;
+    border: 1px ridge #479944;
+    outline: none;
+    background-color: transparent;
+    transition: 0.3s;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+button:hover::before,
+button:hover::after {
+    transform: scale(0)
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 25px #479944;
+}
+
+
+/* APPARITION AU SCROLL */
+
+.reveal {
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/*SCROLL HORIZANTAL*/
+
+.slide {
+    width: 100vw;
+    /*100% de la valeaur de l'écran */
+    height: 100vh;
+}
+
+.blocHorizontal {
+    display: flex;
+    flex-direction: row;
+    width: 700vw;
+    transform: rotate(90deg)translateY(-100vh);
+    transform-origin: top left;
+}
+
+.headtofoot {
+    display: flex;
+}
+
+.container {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-x: hidden;
+    /* on enleve le scroll horizantal*/
+
+    /*pour mozilla*/
+    -ms-overlow-style: none;
+    /* pour firefox */
+    -webkit-scrollbar-width: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+/* Page accueil Fabrication */
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: 'TS Block Bold';
+    color: white;
+}
+
+h3 {
+    font-family: 'TS Block Bold';
+    font-size: 45px;
+    color: white;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px;
+}
+
+.intro p {
+    font-size: 36px;
+    text-align: center;
+
+    margin: 7%;
+    color: #FFFFFF;
+
+}
+
+/* Bouton lien animer */
+
+.swipe {
+    margin-top: 15vh;
+    text-align: center;
+}
+
+.link {
+    width: 10rem;
+    height: 10rem;
+    display: inline-block;
+    font-family: 'TS Block', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1175em;
+    word-spacing: 0.3em;
+    text-decoration: none;
+    font-size: 15px;
+
+}
+
+.link__svg {
+    width: 100%;
+    height: auto;
+    transform-box: fill-box;
+    fill: white;
+    stroke: white;
+    stroke-width: 0.05em;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.link__arrow {
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.link__arrow:hover {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}
+
+.link__text {
+    animation: rotate normal infinite 20s linear;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+.link__text:hover {
+    animation-play-state: paused;
+}
+
+
+/*Contenu*/
+
+h1 {
+    text-align: center;
+    font-size: 65px;
+    font-family: 'TS Block Bold';
+    color: white;
+}
+
+h3 {
+    font-family: 'TS Block Bold';
+    font-size: 45px;
+    color: white;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 41px;
+}
+
+.concassage img {
+    width: 296px;
+}
+
+.concassage p {
+    color: white;
+    font-size: 22px;
+    border-style: solid;
+    border-image: linear-gradient(to left, #479944, #5E9FD7) 1;
+    border-radius: 20em;
+    /* border-image-source: linear-gradient(to left, #479944,#5E9FD7); */
+    padding: 3%;
+    text-align: center;
+    width: 50%;
+}
+
+.concassage div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* -----------FOOTER---------- */
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'TS Block';
+}
+
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+    list-style: none;
+}
+
+.social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+.menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+}
+
+.menu__link:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wave {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../images/lignevague.png");
+    background-size: 1000px 100px;
+}
+
+.wave#wave1 {
+    z-index: 1000;
+    opacity: 1;
+    bottom: 0;
+    animation: animateWaves 10s linear infinite;
+}
+
+.wave#wave2 {
+    z-index: 999;
+    opacity: 0.5;
+    bottom: 10px;
+    animation: animate 4s linear infinite !important;
+}
+
+.wave#wave3 {
+    z-index: 1000;
+    opacity: 0.2;
+    bottom: 15px;
+    animation: animateWaves 3s linear infinite;
+}
+
+.wave#wave4 {
+    z-index: 999;
+    opacity: 0.7;
+    bottom: 20px;
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animateWaves {
+    0% {
+        background-position-x: 1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: -1000px;
+    }
+
+    100% {
+        background-positon-x: 0px;
+    }
+}

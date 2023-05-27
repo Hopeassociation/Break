@@ -1,5 +1,9 @@
-établir connection base de données
+Page biere individuelle
 
-récupérer nom biere
+Page Fabrication
 
-et le mettre
+Intégrer vidéo
+
+Page panier
+
+Notre équipe
