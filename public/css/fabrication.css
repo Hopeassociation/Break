@@ -237,11 +237,11 @@ p {
     width: 125px;
 }
 
-.anim_conc img:nth-child(1){
+.anim_conc img:nth-child(1) {
     animation: rotate_inverse normal infinite 15s linear;
 }
 
-.anim_conc img:nth-child(2){
+.anim_conc img:nth-child(2) {
     animation: rotate normal infinite 15s linear;
 }
 
@@ -263,7 +263,7 @@ p {
     width: 50%;
 }
 
-.concassage {
+.etape_plus {
     padding: 3px;
     padding-top: 10vh;
     display: flex;
@@ -279,8 +279,26 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    
 }
+
+.gif {
+    width: 297px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gif img {
+    width: 297px;
+    height: 336px;
+}
+
+.anim_emp img {
+
+}
+
+
 
 /* -----------FOOTER---------- */
 

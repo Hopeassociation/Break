@@ -29,7 +29,7 @@
             </div>
             <div class="slide etape">
                 <h3>Le concassage</h3>
-                <div class="concassage">
+                <div class="etape_plus">
                     <div class="anim_conc">
                         <img src="public/images/fabrication/concassage_rouage.svg" alt="schema concassage">
                         <img src="public/images/fabrication/concassage_rouage.svg" alt="schema concassage">
@@ -38,44 +38,61 @@
                         et les céréales permet d’obtenir un meilleur accès à l’amidon.</p>
                 </div>
             </div>
-            <div class="slide concassage">
+            <div class="slide etape">
                 <h3>L'empatage</h3>
-                <div>
-                    <img src="public/images/fabrication/empatage.svg" alt="schema maltage">
-                    <p>Le début du brassage de la bière commence par le concassage du malt. Moudre les grains de malts
-                        et les céréales permet d’obtenir un meilleur accès à l’amidon.</p>
+                <div class="etape_plus">                   
+                    <div class="gif">
+                        <img src="public/images/fabrication/empatage.gif" alt="schema empatage">
+                    </div>
+                    <p>Une fois le concassage effectué, les grains sont ajoutés à 30 litres d’eau chauffés à 68°C
+                        dans une cuve de brassage pour activer les enzymes présentes dans le malt. Il faut brasser la bière à intervalle régulier afin que
+                        l’amidon soit extrait à son maximum.
+                    </p>
                 </div>
             </div>
-            <div class="slide concassage">
+            <div class="slide etape">
                 <h3>Filtration et rincage</h3>
-                <div>
-                    <img src="public/images/fabrication/filtration.svg" alt="schema maltage">
-                    <p>Le début du brassage de la bière commence par le concassage du malt. Moudre les grains de malts
-                        et les céréales permet d’obtenir un meilleur accès à l’amidon.</p>
+                <div class="etape_plus">                   
+                    <div class="gif">
+                        <img src="public/images/fabrication/filtration.gif" alt="schema filtration">
+                    </div>
+                    <p>Une fois le concassage effectué, les grains sont ajoutés à 30 litres d’eau chauffés à 68°C
+                        dans une cuve de brassage pour activer les enzymes présentes dans le malt. Il faut brasser la bière à intervalle régulier afin que
+                        l’amidon soit extrait à son maximum.
+                    </p>
                 </div>
             </div>
-            <div class="slide concassage">
+            <div class="slide etape">
                 <h3>Ebullition et houblonnage</h3>
-                <div>
-                    <img src="public/images/fabrication/ebullition.svg" alt="schema maltage">
-                    <p>Le début du brassage de la bière commence par le concassage du malt. Moudre les grains de malts
-                        et les céréales permet d’obtenir un meilleur accès à l’amidon.</p>
+                <div class="etape_plus">                   
+                    <div class="gif">
+                        <img src="public/images/fabrication/ebullition.gif" alt="schema ebullition">
+                    </div>
+                    <p>Une fois le moût obtenu, nous le portons à ébullition pendant 1 heure. 
+                    </p>
                 </div>
             </div>
-            <div class="slide concassage">
+            <div class="slide etape">
                 <h3>Refroidissement</h3>
-                <div>
-                    <img src="public/images/fabrication/refroidissement.svg" alt="schema maltage">
-                    <p>Le début du brassage de la bière commence par le concassage du malt. Moudre les grains de malts
-                        et les céréales permet d’obtenir un meilleur accès à l’amidon.</p>
+                <div class="etape_plus">                   
+                    <div class="gif">
+                        <img src="public/images/fabrication/refroidissement.gif" alt="schema refroidissement">
+                    </div>
+                    <p>Pour refroidir notre moût, nous faisons circuler de l’eau dans un serpentin plongé dans la
+cuve de brassage jusqu’à ce que la température du moût soit redescendu suffisamment.
+
+                    </p>
                 </div>
             </div>
-            <div class="slide concassage">
+            <div class="slide etape">
                 <h3>Fermentation</h3>
-                <div>
-                    <img src="public/images/fabrication/concassage.svg" alt="schema maltage">
-                    <p>Le début du brassage de la bière commence par le concassage du malt. Moudre les grains de malts
-                        et les céréales permet d’obtenir un meilleur accès à l’amidon.</p>
+                <div class="etape_plus">                   
+                    <div class="gif">
+                        <img src="public/images/fabrication/fermentation.svg" alt="schema refroidissement">
+                    </div>
+                    <p>Lorsque le moût est bien refroidit, nous ajoutons les levures puis nous mettons notre
+production dans une cuve de fermentation. Après 3 à 4 semaines de patience, les levures
+auront transformé le moût en bière.</p>
                 </div>
             </div>
         </div>
