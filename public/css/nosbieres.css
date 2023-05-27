@@ -14,6 +14,11 @@ body {
     color: white;
 }
 
+#content {
+    min-height: calc(100vh - 100px); /* Réserve 100px pour le pied de page */
+    padding-bottom: 100px; /* Espace en bas du contenu pour le pied de page */
+}
+
 /* ----------HEADER---------- */
 
 
@@ -110,46 +115,29 @@ h3 {
     font-family: 'TS Block';
     font-style: normal;
     font-weight: 400;
-    font-size: 500%;
+    font-size: 6vw;
     line-height: 76px;
+    position: relative;
+    top: -82px;
 }
 
 #biere {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 8% 10% 8%;
+    display: grid;
+    gap: 5%;
+    margin-top: 20vh;
 }
 
 .biere {
-    display: flex;
-    background-image: url(../images/bieredex/grenada.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    height: 80vh;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 13%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
 }
 
 .biere img {
-    width: 95%;
+    width: 80%;
 }
 
-.photobiere {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.contenu1 {
-    flex: 7;
-    height: 50;
-    width: 50;
-}
 
 /* -----------FOOTER---------- */
 
