@@ -40,7 +40,7 @@
             </div>
             <div class="slide etape">
                 <h3>L'empatage</h3>
-                <div class="etape_plus">                   
+                <div class="etape_plus">
                     <div class="gif">
                         <img src="public/images/fabrication/empatage.gif" alt="schema empatage">
                     </div>
@@ -52,7 +52,7 @@
             </div>
             <div class="slide etape">
                 <h3>Filtration et rincage</h3>
-                <div class="etape_plus">                   
+                <div class="etape_plus">
                     <div class="gif">
                         <img src="public/images/fabrication/filtration.gif" alt="schema filtration">
                     </div>
@@ -64,37 +64,48 @@
             </div>
             <div class="slide etape">
                 <h3>Ebullition et houblonnage</h3>
-                <div class="etape_plus">                   
+                <div class="etape_plus">
                     <div class="gif">
                         <img src="public/images/fabrication/ebullition.gif" alt="schema ebullition">
                     </div>
-                    <p>Une fois le moût obtenu, nous le portons à ébullition pendant 1 heure. 
+                    <p>Une fois le moût obtenu, nous le portons à ébullition pendant 1 heure.
                     </p>
                 </div>
             </div>
             <div class="slide etape">
                 <h3>Refroidissement</h3>
-                <div class="etape_plus">                   
-                    <div class="gif">
+                <div class="etape_plus">
+                    <div class="gif refroidissement">
                         <img src="public/images/fabrication/refroidissement.gif" alt="schema refroidissement">
                     </div>
                     <p>Pour refroidir notre moût, nous faisons circuler de l’eau dans un serpentin plongé dans la
-cuve de brassage jusqu’à ce que la température du moût soit redescendu suffisamment.
+                        cuve de brassage jusqu’à ce que la température du moût soit redescendu suffisamment.
 
                     </p>
                 </div>
             </div>
             <div class="slide etape">
                 <h3>Fermentation</h3>
-                <div class="etape_plus">                   
+                <div class="etape_plus">
+                    <div class="gif fermentation">
+                        <img src="public/images/fabrication/fermentation.svg" alt="schema refroidissement">
+                    </div>
+                    <p>Lorsque le moût est bien refroidit, nous ajoutons les levures puis nous mettons notre
+                        production dans une cuve de fermentation. Après 3 à 4 semaines de patience, les levures
+                        auront transformé le moût en bière.</p>
+                </div>
+            </div>
+            <!-- <div class="slide etape">
+                <h3>Fermentation</h3>
+                <div class="etape_plus">
                     <div class="gif">
                         <img src="public/images/fabrication/fermentation.svg" alt="schema refroidissement">
                     </div>
                     <p>Lorsque le moût est bien refroidit, nous ajoutons les levures puis nous mettons notre
-production dans une cuve de fermentation. Après 3 à 4 semaines de patience, les levures
-auront transformé le moût en bière.</p>
+                        production dans une cuve de fermentation. Après 3 à 4 semaines de patience, les levures
+                        auront transformé le moût en bière.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
 
     </div>

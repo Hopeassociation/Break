@@ -291,14 +291,15 @@ p {
 
 .gif img {
     width: 297px;
-    height: 336px;
 }
 
-.anim_emp img {
-
+.ebullition img {
+    width: 357px;
 }
 
-
+.fermentation img {
+    height: 330px;
+}
 
 /* -----------FOOTER---------- */
 
