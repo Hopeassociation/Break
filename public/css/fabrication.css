@@ -5,7 +5,7 @@ body {
 
     overscroll-behavior-y: none;
 
-    background-color: #000e03;
+    background-color: #0D0D0D;
 }
 
 /* ----------HEADER---------- */
@@ -73,7 +73,7 @@ button:hover {
 /* APPARITION AU SCROLL */
 
 .reveal {
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.2s ease-in-out;
 }
 
@@ -200,6 +200,12 @@ p {
     }
 }
 
+@keyframes rotate_inverse {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .link__text:hover {
     animation-play-state: paused;
 }
@@ -227,11 +233,25 @@ p {
     line-height: 41px;
 }
 
-.concassage img {
-    width: 296px;
+.anim_conc img {
+    width: 125px;
 }
 
-.concassage p {
+.anim_conc img:nth-child(1){
+    animation: rotate_inverse normal infinite 15s linear;
+}
+
+.anim_conc img:nth-child(2){
+    animation: rotate normal infinite 15s linear;
+}
+
+.anim_conc {
+    background-image: url(../images/fabrication/concassage.svg);
+    background-size: 296px;
+    background-repeat: no-repeat;
+}
+
+.etape p {
     color: white;
     font-size: 22px;
     border-style: solid;
@@ -243,9 +263,23 @@ p {
     width: 50%;
 }
 
-.concassage div {
+.concassage {
+    padding: 3px;
+    padding-top: 10vh;
     display: flex;
+    align-items: center;
     justify-content: space-evenly;
+}
+
+.anim_conc {
+    background-image: url(../images/fabrication/concassage.svg);
+    background-repeat: no-repeat;
+    width: 297px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 /* -----------FOOTER---------- */

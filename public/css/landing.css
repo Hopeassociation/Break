@@ -112,7 +112,7 @@ body {
 
 .scan h3 {
     color: #479944;
-    font-family: 'roboto' ;
+    font-family: 'Franklin Gothic Medium' ;
     font-size: 2em;
     margin-top: 20px;
     filter: drop-shadow(0 0 20px #479944) drop-shadow(0 0 60px #479944);
@@ -142,7 +142,7 @@ body {
 #oui{
     background:#479944;
      color: #000000;
-     font-family: 'roboto' ;
+     font-family: 'Franklin Gothic Medium' ;
      text-decoration:none;
      font-size:1.2em;
      padding: 0.25em 1em;
@@ -159,7 +159,7 @@ body {
 #non{
     background:#479944;
      color: #000000;
-     font-family: 'roboto' ;
+     font-family: 'Franklin Gothic Medium' ;
      text-decoration:none;
      font-size:1.2em;
      padding: 0.25em 1em;

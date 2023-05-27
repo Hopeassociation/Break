@@ -41,7 +41,7 @@ body {
     text-decoration: none;
     font-size: 18px;
     color: white;
-    font-family: 'Roboto';
+    font-family: 'Franklin Gothic Medium';
 }
 
 #menu a:hover {
@@ -96,7 +96,7 @@ button:hover {
 h1 {
     text-align: center;
     font-size: 30px;
-    font-family: 'Roboto';
+    font-family: 'Franklin Gothic Medium';
     color: white;
 }
 
