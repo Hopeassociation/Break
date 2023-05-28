@@ -18,7 +18,7 @@ $biere_photo = [
     ],
     "hibiscus" => [
         'nom' => 'hibiscus galactic',
-        'photo' => 'public/images/mockup/grenada.png'
+        'photo' => 'public/images/mockup/hibiscus.png'
     ],
     "litchi" => [
         'nom' => 'space litchi',

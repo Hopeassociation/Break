@@ -95,17 +95,17 @@
                         auront transformé le moût en bière.</p>
                 </div>
             </div>
-            <!-- <div class="slide etape">
-                <h3>Fermentation</h3>
-                <div class="etape_plus">
-                    <div class="gif">
-                        <img src="public/images/fabrication/fermentation.svg" alt="schema refroidissement">
-                    </div>
-                    <p>Lorsque le moût est bien refroidit, nous ajoutons les levures puis nous mettons notre
-                        production dans une cuve de fermentation. Après 3 à 4 semaines de patience, les levures
-                        auront transformé le moût en bière.</p>
+            <div class="slide fin">
+                <p>Et hop, on passe à la mise en bouteille !</p>
+                <a href="nosbieres.php">
+                <h6>Les acheter !</h6>
+                </a>
+                <div class="swatch">   
+                    <?php for ($i = $nb_biere-1; $i >= 0; $i--) : ?>                
+                        <div><img alt="<?=$bieres[$i]['fruit']?>" src="public/images/mockup/<?= $bieres[$i]['fruit']?> "></div>
+                   <?php endfor ?>
                 </div>
-            </div> -->
+            </div>
         </div>
 
     </div>

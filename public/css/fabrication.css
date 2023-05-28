@@ -1,3 +1,8 @@
+::selection {
+    color: #0D0D0D;
+    background-color: white;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -70,12 +75,7 @@ button:hover {
 }
 
 
-/* APPARITION AU SCROLL */
-
-.reveal {
-    opacity: 1;
-    transition: opacity 0.2s ease-in-out;
-}
+/* ----------MAIN---------- */
 
 /*SCROLL HORIZANTAL*/
 
@@ -88,7 +88,7 @@ button:hover {
 .blocHorizontal {
     display: flex;
     flex-direction: row;
-    width: 700vw;
+    width: 800vw;
     transform: rotate(90deg)translateY(-100vh);
     transform-origin: top left;
 }
@@ -138,6 +138,21 @@ p {
     line-height: 41px;
 }
 
+.fin p {
+    font-size: 36px;
+    text-align: center;
+
+    margin: 2%;
+    color: #FFFFFF;
+}
+
+.fin a {
+    text-decoration: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+}
+
 .intro p {
     font-size: 36px;
     text-align: center;
@@ -145,6 +160,20 @@ p {
     margin: 7%;
     color: #FFFFFF;
 
+}
+
+h6 {
+    font-family: 'Franklin Gothic';
+    margin: 0;
+    font-size: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding: 5px;
+}
+
+h6:hover {
+    outline: 1px solid white;
 }
 
 /* Bouton lien animer */
@@ -299,6 +328,168 @@ p {
 
 .fermentation img {
     height: 330px;
+}
+
+.swatch {
+    display: flex;
+    text-align: center;
+    position: relative;
+    height: 500px;
+    margin: 10px;
+    justify-content: center;
+    top: -70px;
+    margin-top: 16vh;
+}
+
+
+.swatch img {
+    width: 425px;
+}
+
+.swatch div {
+    height: 225px;
+    position: absolute;
+    top: -30px;
+    text-align: center;
+    box-sizing: border-box;
+    transform-origin: center 90%;
+    display: inline-block;
+    backface-visibility: hidden;
+    margin-left: -10px;
+    transform: rotate(0deg);
+}
+
+.swatch div:before {
+    width: 16px;
+    height: 16px;
+    content: "";
+    display: inline-block;
+    border-radius: 8px;
+    bottom: 10px;
+    position: absolute;
+    margin-left: -8px;
+}
+
+.swatch div:nth-child(1) {
+    animation: swatch-purple-motion infinite 8scubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(2) {
+    animation: swatch-blue-motion infinite 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(3) {
+    animation: swatch-green-motion infinite 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(4) {
+    animation: swatch-yellow-motion infinite 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(5) {
+    animation: swatch-orange-motion infinite 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.swatch div:nth-child(6) {
+    animation: swatch-red-motion infinite 8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+@keyframes swatch-purple-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(-65deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-blue-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(-40deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-green-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(-15deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-yellow-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(15deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-orange-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(40deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes swatch-red-motion {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    30%,
+    70% {
+        transform: rotate(65deg);
+    }
+
+    90%,
+    10% {
+        transform: rotate(0deg);
+    }
 }
 
 /* -----------FOOTER---------- */
