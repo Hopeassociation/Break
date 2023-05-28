@@ -1,6 +1,6 @@
 <div id="container">
 
-    <main id="main">
+    <main id="main hidden">
         <div id="titre">
             <h1>Notre collection capsule</h1>
             <h2>vous devriez aimez ceci !</h2>            

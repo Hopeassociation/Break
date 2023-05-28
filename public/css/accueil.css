@@ -15,6 +15,14 @@ body {
 }
 
 /* ----------HEADER---------- */
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+  }
 
 
 #menu {

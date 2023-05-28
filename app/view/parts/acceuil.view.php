@@ -1,4 +1,4 @@
-<section class="main">
+<section class="main hidden">
 
   <div id="titre">
     <h1>Grenada</h1>

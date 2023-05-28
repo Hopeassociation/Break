@@ -1,6 +1,6 @@
 <body>
 
-    <div class="container">
+    <div class="container hidden">
         <div class="blocHorizontal">
             <div class="slide intro">
                 <p>Break vous présente les différentes étapes de brassage de nos bières ! Nos bières sont crées de façon
@@ -111,7 +111,8 @@
     </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="app_scroll.js"></script>
+    <script src="public/js/app.js"></script>
+
 
 </body>
 
