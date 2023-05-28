@@ -1,31 +1,24 @@
 <main>
     <section class="all">
-    <section class="gauche">
-        <img src="public/images/mockup/grenada.png" alt="biere">
-        <img src="public/images/grid_biere.svg" alt="filet">
-    </section>
-    <section class="droite">
-        <div class="droite_descr">
-            <p></p>
-            <p><?= $bieres[$i]['degre']?></p>
-            <p>Biere <?= $bieres[$i]['type']?></p>
-            <p> Grenada est une bière au gout fruité, qui séduira les plus nostalgique d’entre vous !</p>
-            <p id="counter"><?=$quantite?></p>
-            <p><?= $bieres[$i]['prix']?></p>
-        </div>
-    </section>
-
-        <section class="bouton">
-        <div>
-            <button id="moins">
-                <span> - </span>
-                <div class="border full-rounded"></div></button>
-        </div>
-        <button id="plus">
-            <span> + </span>
-            <div class="border full-rounded"></div></button>
-    </section>
-    <button id="add">
-            <span> Ajouter au panier </span>
-        </button>
+        <section class="gauche">
+            <img src="public/images/mockup/grenada.png" alt="biere">
+            <img src="public/images/grid_biere.svg" alt="filet">
+        </section>
+        <section class="droite">
+            <div class="droite_descr">
+                <form method="post" action="addPanier.php">
+                    <input type="text" name="nom" disabled="disabled" value="<?= $bieres[$i]['nom'] ?>">
+                    <p><?= $bieres[$i]['degre'] ?></p>
+                    <p>Biere <?= $bieres[$i]['type'] ?></p>
+                    <p> <?= $bieres[$i]['nom'] ?> est une bière au gout fruité, qui séduira les plus nostalgique d’entre vous !</p>
+                    <input type="number" name="prix" disabled="disabled" value="<?= $bieres[$i]['prix'] ?>">
+                    <label for="counter">Quantite :</label>
+                    <input type="number" name="quantite" id="counter" value="<?= $quantite ?>">
+                    <input type="submit" name="add" value="Ajouter au panier">
+                    <!-- <p id="counter"><?= $quantite ?></p> -->
+                    
+                </form>
+            </div>
+        </section>
+        
 </main>

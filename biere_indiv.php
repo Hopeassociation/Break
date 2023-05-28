@@ -1,4 +1,13 @@
 <?php
+//On ouvre une session pour pouvoir stocker
+//des données venant de l'utilisateur
+session_start();
+
+if (isset($_POST['add'])){
+    if (isset($_SESSION['panier'])){
+        $panier = $_SESSION['panier'];
+    }
+}
 
 require_once 'database.php';
 require_once 'app/model/dataConnection.php';
