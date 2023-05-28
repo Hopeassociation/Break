@@ -6,12 +6,12 @@
     </section>
     <section class="droite">
         <div class="droite_descr">
-            <p>grenada</p>
-            <p>5,3%</p>
-            <p>Biere blonde</p>
+            <p></p>
+            <p><?= $bieres[$i]['degre']?></p>
+            <p>Biere <?= $bieres[$i]['type']?></p>
             <p> Grenada est une bière au gout fruité, qui séduira les plus nostalgique d’entre vous !</p>
             <p id="counter"><?=$quantite?></p>
-            <p>Quantité</p>
+            <p><?= $bieres[$i]['prix']?></p>
         </div>
     </section>
 
@@ -25,4 +25,7 @@
             <span> + </span>
             <div class="border full-rounded"></div></button>
     </section>
+    <button id="add">
+            <span> Ajouter au panier </span>
+        </button>
 </main>

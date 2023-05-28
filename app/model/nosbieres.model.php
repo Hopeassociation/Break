@@ -21,6 +21,8 @@ function getNameBiere(PDO $db): array {
     return $result;
 }
 
+
+
 // récuperer le nombre de bieres dans notre db
 
 // function getNombreBiere(PDO $db): int {
