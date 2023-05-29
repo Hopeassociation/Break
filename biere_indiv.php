@@ -3,23 +3,20 @@
 //des données venant de l'utilisateur
 session_start();
 
-if (isset($_POST['add'])){
-    if (isset($_SESSION['panier'])){
-        $panier = $_SESSION['panier'];
-    }
+if (!isset($_SESSION['panier']) || !is_array($_SESSION['panier'])) {
+    $_SESSION['panier'] = array();
 }
 
-require_once 'database.php';
 require_once 'app/model/dataConnection.php';
 require_once 'app/model/biere_indiv.model.php';
 
 //Connection bd
 $databaseConnection = getDatabaseConnection();
+$i = 0;
 //info biere
 $bieres = getElementBiere($databaseConnection);
-//Quantite biere panier
-$quantite=0;
-$i = 0;
+
+$id = $bieres[$i]['ref_biere'];
 
 //Génération de la page
 $page_title = 'biere';

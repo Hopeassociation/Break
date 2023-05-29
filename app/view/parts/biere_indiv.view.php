@@ -6,7 +6,7 @@
         </section>
         <section class="droite">
             <div class="droite_descr">
-                <form method="post" action="addPanier.php">
+                <form method="post" action="addPanier">
                     <input type="text" name="nom" disabled="disabled" value="<?= $bieres[$i]['nom'] ?>">
                     <p><?= $bieres[$i]['degre'] ?></p>
                     <p>Biere <?= $bieres[$i]['type'] ?></p>
