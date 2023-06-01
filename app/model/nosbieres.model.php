@@ -1,6 +1,5 @@
 
 <?php
-
 //Fonction qui récupére le nombre de biere dans la base de donnée
 
 function getNombreBiere(PDO $db): int {

@@ -12,8 +12,8 @@
                     <p>Biere <?= $bieres[$i]['type'] ?></p>
                     <p> <?= $bieres[$i]['nom'] ?> est une bière au gout fruité, qui séduira les plus nostalgique d’entre vous !</p>
                     <input type="number" name="prix" disabled="disabled" value="<?= $bieres[$i]['prix'] ?>">
-                    <label for="counter">Quantite :</label>
-                    <input type="number" name="quantite" id="counter" value="<?= $quantite ?>">
+                    <!-- <label for="counter">Quantite :</label>
+                    <input type="number" name="quantite" id="counter" value="<?= $quantite ?>"> -->
                     <input type="submit" name="add" value="Ajouter au panier">
                     <!-- <p id="counter"><?= $quantite ?></p> -->
                     
