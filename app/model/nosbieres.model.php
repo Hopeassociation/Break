@@ -13,7 +13,15 @@ function getNombreBiere(PDO $db): int {
 //Fonction qui récupere le nom des biere et fruits 
 
 function getNameBiere(PDO $db): array {
-    $sql = "SELECT nom as nom_biere, fruit as fruit FROM `biere`;";
+    $sql = "SELECT nom as nom_biere, fruit as fruit FROM `biere`";
+    $query = $db->query($sql);
+    $result = $query->fetchAll();
+
+    return $result;
+}
+
+function getAllBiere(PDO $db): array {
+    $sql = "SELECT * FROM `biere`";
     $query = $db->query($sql);
     $result = $query->fetchAll();
 

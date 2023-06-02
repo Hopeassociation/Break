@@ -143,8 +143,12 @@ h3 {
     justify-items: center;
 }
 
-.biere img {
+.biere a {
     width: 80%;
+}
+
+.biere img {
+    width: 100%;
 }
 
 

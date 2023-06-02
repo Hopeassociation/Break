@@ -10,12 +10,10 @@
                 <div class="biere">
                     <a href="biere_indiv.php">
                         <img src="public/images/bieredex/<?= $bieres[$i]['fruit'] ?>.png" alt="">
+                        </a>
                         <h3><?= $bieres[$i]['nom_biere'] ?></h3>
-                    </a>
-
+                    
                 </div>
             <?php endfor ?>
         </section>
 </main>
-
-</div>
