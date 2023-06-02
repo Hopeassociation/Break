@@ -8,8 +8,10 @@
 
             <?php for ($i = 0; $i < $nb_biere; $i++) : ?>
                 <div class="biere">
-                    <img src="public/images/bieredex/<?= $bieres[$i]['fruit'] ?>.png" alt="">
-                    <h3><?= $bieres[$i]['nom_biere'] ?></h3>
+                    <a href="biere_indiv.php">
+                        <img src="public/images/bieredex/<?= $bieres[$i]['fruit'] ?>.png" alt="">
+                        <h3><?= $bieres[$i]['nom_biere'] ?></h3>
+                    </a>
 
                 </div>
             <?php endfor ?>
