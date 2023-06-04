@@ -74,7 +74,7 @@ button:hover {
 
 body {
     background-color: black;
-    font-family: "ts block";
+    font-family: "TS Block Bold";
 }
 
 .all {
@@ -183,6 +183,7 @@ color: #FFFFFF;
 /* -----------FOOTER---------- */
 
 .footer {
+    margin-top: 20vh;
     position: relative;
     width: 100%;
     ;

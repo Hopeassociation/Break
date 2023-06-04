@@ -112,7 +112,7 @@ h1 {
 h2 {
     padding: 0 20%;
 
-    font-family: 'TS Block';
+    font-family: 'TS Block Bold';
     font-style: normal;
     font-weight: 400;
     font-size: 66px;
@@ -121,7 +121,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'TS Block';
+    font-family: 'TS Block Bold';
     font-style: normal;
     font-weight: 400;
     font-size: 6vw;
@@ -155,6 +155,7 @@ h3 {
 /* -----------FOOTER---------- */
 
 .footer {
+    margin-top: 20vh;
     position: relative;
     width: 100%;
     ;

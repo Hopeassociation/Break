@@ -10,10 +10,12 @@
 }
 
 @font-face {
-    font-family: "Tsblock";
-    src: url("Tsblock");
-    font-weight: bold;
-    }
+    font-family: 'TS Block Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TS Block Bold'), url('TS Block Bold.woff') format('woff');
+}
+
 
 body {
     background-color: #0D0D0D;
@@ -94,12 +96,13 @@ button:hover {
 .main {
     height: 100vh;
     margin-top: 40px;
+    margin-bottom: 20vh;
 }
 
 
 h1 {
     color: #FFFFFF;
-    font-family: 'Tsblock', sans-serif;
+    font-family: 'TS Block Bold', sans-serif;
     font-size: 100px;
     position: relative;
 

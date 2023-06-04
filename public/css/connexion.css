@@ -20,7 +20,7 @@ body {
 
 h1 {
     margin-bottom: 0;
-    font-family: 'TS Block';
+    font-family: 'TS Block Bold';
     font-style: normal;
     font-weight: 400;
     font-size: 66px;
@@ -64,7 +64,7 @@ form {
     background-color: #ffffff00;
     border: 1px solid white;
     color: white;
-    font-family: 'Ts Block';
+    font-family: 'TS Block Bold';
   }
 
   input[type="submit"] {
@@ -72,7 +72,7 @@ form {
     padding: 10px;
     background-color: #ffffff00;
     border: 1px solid white;
-    font-family: 'Ts Block';
+    font-family: 'TS Block Bold';
     color: white;
     border: none;
     transition: 0.3s ease-out;
@@ -154,6 +154,7 @@ button:hover {
 /* -----------FOOTER---------- */
 
 .footer {
+    margin-top: 20vh;
     position: relative;
     width: 100%;
     ;
