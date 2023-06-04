@@ -11,9 +11,8 @@
 
 @font-face {
     font-family: "Tsblock";
-    src: local("Tsblock"),
-      url("typo/tsblock.TTF") format("opentype") tech(color-COLRv1), url("typo/tsblock.TTF")
-        format("opentype"), url("typo/tsblock.TTF") format("woff");
+    src: url("Tsblock");
+    font-weight: bold;
     }
 
 body {
@@ -100,7 +99,7 @@ button:hover {
 
 h1 {
     color: #FFFFFF;
-    font-family: 'TS Block', sans-serif;
+    font-family: 'Tsblock', sans-serif;
     font-size: 100px;
     position: relative;
 
