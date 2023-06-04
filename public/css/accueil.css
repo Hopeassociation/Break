@@ -9,6 +9,13 @@
     background-color: white;
 }
 
+@font-face {
+    font-family: "Tsblock";
+    src: local("Tsblock"),
+      url("typo/tsblock.TTF") format("opentype") tech(color-COLRv1), url("typo/tsblock.TTF")
+        format("opentype"), url("typo/tsblock.TTF") format("woff");
+    }
+
 body {
     background-color: #0D0D0D;
     color: white;

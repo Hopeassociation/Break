@@ -6,7 +6,7 @@
 
   <div class="swatch">
     <?php for ($i = $nb_biere - 1; $i >= 0; $i--) : ?>
-      <div><img alt="<?= $bieres[$i]['fruit'] ?>" src="public/images/mockup/<?= $bieres[$i]['fruit'] ?> "></div>
+      <div><img alt="<?=$bieres[$i]['fruit']?>" src="public/images/mockup/<?=$bieres[$i]['fruit']?>.png"></div>
     <?php endfor ?>
   </div>
   <div id="grid">

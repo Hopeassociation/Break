@@ -20,7 +20,7 @@
         </a></li>
     </ul>
     <ul class="menu">
-      <li class="menu__item"><a class="menu__link" href="#">Acceuil</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Accueil</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Nos bieres</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
       <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>

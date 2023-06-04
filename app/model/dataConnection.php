@@ -2,12 +2,10 @@
 
 function getDatabaseConnection(): PDO
 {
-    $dsn = 'mysql:dbname=break;host=localhost;charset=utf8';
-    $username = 'root';
-    $password = '';
+    $dsn = 'mysql:dbname='. DB_NAME .';host='. DB_HOST .';charset=utf8';
 
     try {
-        $databaseConnection = new PDO ($dsn, $username, $password);
+        $databaseConnection = new PDO ($dsn,DB_USER,  DB_PASSWORD);
         $databaseConnection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $databaseConnection->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
     }

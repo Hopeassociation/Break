@@ -3,6 +3,7 @@
 require_once 'app/model/dataConnection.php';
 require_once 'app/model/nosbieres.model.php';
 require_once 'nosbieres.php';
+require_once 'config.php';
 
 //connexion db
 $databaseConnection = getDatabaseConnection();
@@ -15,4 +16,6 @@ $i = 0;
 //pour l'instant 0 mais = $i.nos_bieres.view
 
 //tant que l'id de la biere active est différent de celle de la db
-while($biere[]['fruit'] != $all_biere[])  
+while($biere[$i]['fruit'] != $all_biere[$i]['fruit']){
+
+}  
