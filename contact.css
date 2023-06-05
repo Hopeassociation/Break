@@ -1,0 +1,66 @@
+
+*{
+background-color: black;
+font-family:"TS Block";
+text-decoration: none;
+
+}
+
+
+
+
+body{
+color: white;
+font-family: "ts block";
+}
+
+.fond{
+padding: 30px;
+
+}
+
+.contact{
+display: flex;
+justify-content: center;
+position: relative;
+top: -600px;
+width: 400px;
+height: 400px;
+margin-left: 550px;
+}
+
+h1{
+font-family: 'ts block';
+display: flex;
+justify-content: center;
+padding: 30px;
+position: relative;
+top:-1335px;
+font-size: 30px;
+margin-left: 60px;
+}
+
+
+
+
+.informations{
+margin-left: 610px;
+position: relative;
+top: -1000px;
+width: 300px;
+font-size: 15px;
+}
+
+a{
+color: white;
+}
+
+
+a:hover{
+-webkit-text-stroke: 1px #479944;
+color:black;
+
+}
+
+
+

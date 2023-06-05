@@ -149,12 +149,13 @@ button:hover {
     color: white;
     justify-content: space-around;
     background: no-repeat url("public/images/biere/puzzle_grenada.png");
+    margin-bottom: 10vh;
 }
 
 
 
 .droite_descr p:nth-child(3) {
-    font-family: 'Fr';
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;

@@ -1,11 +1,97 @@
 *{
+    margin: 0;
+    padding: 0;
     font-family: 'roboto';
     color: #fff;
+}
+::selection {
+    color: #0D0D0D;
+    background-color: white;
+}
+
+@font-face {
+    font-family: 'TS Block Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TS Block Bold'), url('TS Block Bold.woff') format('woff');
 }
 
 body{
     background-color: black;
+    color: white;
 }
+
+
+/* ----------HEADER---------- */
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+  }
+
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    margin: 0 3%;
+}
+
+.header img {
+    width: 195px;
+    height: 56px;
+}
+
+#menu a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: 'Franklin Gothic Medium';
+}
+
+#menu a:hover {
+    color: #479944;
+    transition: 0.3s;
+}
+
+#menu li {
+    list-style-type: none;
+}
+
+#menu ul {
+    display: flex;
+    width: 500px;
+    justify-content: space-around;
+}
+
+#menu button {
+    width: 10em;
+    height: 3.5em;
+    border: 1px ridge #479944;
+    outline: none;
+    background-color: transparent;
+    transition: 0.3s;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+button:hover::before,
+button:hover::after {
+    transform: scale(0)
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 25px #479944;
+}
+
+/* fin */
 
 .panier{
     display: flex;
@@ -71,6 +157,7 @@ body{
     border: 2px solid #e8e8e8;
     padding: 10px;
     width: 40px;
+    height: 40px;
     border-radius: 100%;
     background-color: black;
     font-size: small;
@@ -167,4 +254,8 @@ h2{
       #479944 94.3%
     );
     transition: all 0.475s;
+  }
+
+  .footer {
+    display: none;
   }

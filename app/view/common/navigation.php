@@ -5,7 +5,7 @@
     <ul>
         <li><a href="nosbieres.php">Nos bières</a></li>
         <li><a href="fabrication.php">Fabrication</a></li>
-        <li><a href="#">Nos engagements</a></li>
+        <li><a href="team.php">Notre équipe</a></li>
     </ul>
-    <button type="button"><a href="">Mon panier</a></button>
+    <button type="button"><a href="panier.php">Mon panier</a></button>
 </nav>
