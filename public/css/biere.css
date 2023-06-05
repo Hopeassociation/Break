@@ -1,15 +1,85 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* * {
+    color: white;
 }
+ 
+.biere {
+    position: absolute;
+    top: 115px;
+    left: 135px;
+    margin-left: auto;
+    width: 500px;
+}
+
+.filet {
+    position: absolute;
+    top: 670px;
+    left: 90px;
+    display: block;
+    margin-left: auto;
+}
+
+.grenada {
+    color: white;
+}
+
+div#droite {
+    top: 150px;
+    right: 60px;
+    width: 500px;
+}
+
+#puzzle {
+    display: flex;
+    background-image: url("puzzlerouge.png");
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: black;
+    width: 100vw;
+    
+} */
+
+
+body {
+    padding: 0;
+    /* margin: 10%; */
+
+    background-color: black;
+    /* height: 100vh; */
+    font-family: "ts block";
+}
+
 
 ::selection {
     color: #0D0D0D;
     background-color: white;
 }
 
+@font-face {
+    font-family: 'TS Block Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('TS Block Bold'), url('TS Block Bold.woff') format('woff');
+}
+
+
+body {
+    background-color: #0D0D0D;
+    color: white;
+}
+
 /* ----------HEADER---------- */
+.hidden {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+    transition: opacity 0.9s ease-in-out;
+}
 
 
 #menu {
@@ -70,120 +140,109 @@ button:hover {
     box-shadow: inset 0px 0px 25px #479944;
 }
 
-/* ----------MAIN------------ */
+/* fin */
 
-body {
-    background-color: black;
-    font-family: "TS Block Bold";
-}
 
 .all {
+    height: 90vh;
     display: flex;
     color: white;
-    justify-content: space-between;
+    justify-content: space-around;
+    background: no-repeat url("public/images/biere/puzzle_grenada.png");
 }
 
-button {
-    width: 165px;
-    height: 62px;
-    cursor: pointer;
-    color: #000;
-    font-size: 17px;
-    border-radius: 1rem;
-    border: none;
-    position: relative;
-    background: #100720;
-    transition: 0.1s;
-  }
-  
-  button {
+
+
+.droite_descr p:nth-child(3) {
+    font-family: 'Fr';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: justify;
+
+    color: #FFFFFF;
+
+}
+
+.droite_descr p:nth-child(4) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    position: relative;
-    margin: auto;
-    padding: 1em 2.5em 1em 2.5em;
-    border: none;
-    background: #fff;
-    transition: all 0.1s linear;
-    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
-   } */
-   
-    button:active {
-    transform: scale(0.95);
-   }
-   
-   button span {
-    color: #464646;
-   }
-   
-   button .border {
-    position: absolute;
-    border: 0.15em solid #fff;
-    transition: all 0.3s 0.08s linear;
-    top: 50%;
-    left: 50%;
-    width: 9em;
-    height: 3em;
-    transform: translate(-50%, -50%);
-   }
-   
-   button:hover .border {
-    display: block;
-    width: 9.9em;
-    height: 3.7em;
-   }
-   
-   .full-rounded {
-    border-radius: 2em;
-   }
+    line-height: 19px;
+    text-align: justify;
 
-   .droite_descr p:nth-child(3) {
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 28px;
-text-align: justify;
+    color: #FFFFFF;
+}
 
-color: #FFFFFF;
-
-   }
-
-   .droite_descr p:nth-child(4) {
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 19px;
-text-align: justify;
-
-color: #FFFFFF;
-   }
-
-   .droite_descr p:nth-child(1) {
+.droite_descr p:nth-child(1) {
     font-size: 32px;
-   }
+}
 
-   .droite_descr p:nth-child(2) {
+.droite_descr p:nth-child(2) {
     font-size: 32px;
-   }
+}
 
-   .droite {
+.droite {
     display: flex;
     width: 30%;
-   }
+    flex-direction: column;
+    position: relative;
+    right: 100px;
+    justify-content: space-evenly;
 
-   .gauche {
-    width: 30%;
-   }
-
-   #filet {
-    
 }
+
+.gauche {
+    width: 30%;
+    position: relative;
+    right: 100px;
+}
+
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 3rem;
+    padding: 0 2rem;
+    border-radius: 1.5rem;
+    background: #731c1c;
+    background-size: 400%;
+    color: #fff;
+    border: none;
+    font-size: large;
+}
+
+.button:hover::before {
+    transform: scaleX(1);
+}
+
+.button-content {
+    position: relative;
+    z-index: 1;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(82.3deg,
+            rgb(0, 0, 0) 10.8%,
+            rgb(134, 3, 3) 94.3%);
+    transition: all 0.475s;
+}
+
 
 /* -----------FOOTER---------- */
 
 .footer {
-    margin-top: 20vh;
     position: relative;
     width: 100%;
     ;

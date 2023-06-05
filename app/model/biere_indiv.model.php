@@ -9,10 +9,3 @@ function getElementBiere(PDO $db): array {
     return $result;
 }
 
-function chercherBiere(int $ref, PDO $db): array {
-    $sql = "SELECT * FROM `biere` WHERE 'ref_biere'= $ref";
-    $query = $db->query($sql);
-    $result = $query->fetch();
-
-    return $result;
-}
